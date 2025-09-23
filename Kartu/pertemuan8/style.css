@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.card-uni {
+    width: 270px;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid darkslategray;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    color: darkslategray;
+    font-family: poppins;
+    gap: 10px;
+
+}
+
+img{
+    width: 80%;
+}
+
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.card-uni:hover{
+    background-color: darkslategray;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+#judul-uni{
+    text-align: center;
+    font-family: poppins;
+    margin: 50px 0 20px 0;
+    color: darkslategray;
+}
+
+#sub-bab{
+    color: darkslategray;
+    font-family: poppins;
+    text-align: center;
+    
+}
