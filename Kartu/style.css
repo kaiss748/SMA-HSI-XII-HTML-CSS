@@ -16,6 +16,16 @@
     
 }
 
+/* .navbar {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    gap: 15px;
+    background-color: darkslategray;
+    padding: 15px 30px;
+    height: 60px;
+} */
+
 .nav-links{
     display: flex;
     gap: 25px;
@@ -33,6 +43,13 @@
 .brand{
     font-size: 1.5em;
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+.navbar {
+    flex-direction: row; /* Kembali ke baris horizontal */
+    justify-content: space-between; /* Mendorong item ke ujung */
+    }
 }
 
 /* .kartu-profil{
@@ -85,7 +102,7 @@ background-color: #f4f4f4;
 padding: 40px;
 }
 
-.card-uni {
+/* .card-uni {
     height: 300px;
     background-color: #ffffff;
     border: 2px solid darkslategray;
@@ -97,7 +114,7 @@ padding: 40px;
     font-family: poppins;
     gap: 10px;
     
-}
+} */
 
 .img-uni{
     width: 260px;
@@ -106,12 +123,12 @@ padding: 40px;
     border-top-right-radius: 6px;
 }
 
-.project-gallery {
+/* .project-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
     padding: 20px;
-}
+} */
 
 .card-uni:hover{
     background-color: darkslategray;
@@ -132,4 +149,37 @@ padding: 40px;
     font-family: poppins;
     text-align: center;
     
+}
+
+/* Style untuk .card tetap sama */
+.card-uni {
+    height: 300px;
+    background-color: #ffffff;
+    border: 2px solid darkslategray;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    color: darkslategray;
+    font-family: poppins;
+    gap: 10px;
+}
+/* Mobile-First: Defaultnya adalah 1 kolom */
+    .project-gallery {
+    display: grid;
+    grid-template-columns: 1fr; /* Hanya 1 kolom */
+    gap: 20px;
+}
+/* Tablet Styles: Terapkan 2 kolom jika lebar layar minimal 600px */
+@media (min-width: 600px) {
+    .project-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Ubah menjadi 2 kolom */
+    }
+}
+/* Desktop Styles: Terapkan 3 kolom jika lebar layar minimal 900px */
+@media (min-width: 900px) {
+    .project-gallery {
+    grid-template-columns: repeat(3, 1fr); /* Ubah menjadi 3 kolom */
+    
+    }
 }
