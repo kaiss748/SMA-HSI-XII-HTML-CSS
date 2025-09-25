@@ -148,6 +148,7 @@ padding: 40px;
     color: darkslategray;
     font-family: poppins;
     text-align: center;
+    margin-bottom: 40px;
     
 }
 
@@ -182,4 +183,19 @@ padding: 40px;
     grid-template-columns: repeat(3, 1fr); /* Ubah menjadi 3 kolom */
     
     }
+}
+
+
+#lampu-ajaib {
+    width: 200px;
+    padding: 40px;
+    margin: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    /* Gaya awal saat 'mati' */
+    background-color: #444;
+    color: white;
 }
