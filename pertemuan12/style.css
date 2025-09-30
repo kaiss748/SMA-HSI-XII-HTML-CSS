@@ -83,7 +83,7 @@ main{
 .text-open h1{
     font-size: 32px;
     font-weight: 800;
-    line-height: 42px;
+    line-height: 38px;
     color: #37353E;
 }
 
@@ -124,7 +124,7 @@ main{
         display: flex;
         flex-direction: column;
         font-family: "poppins", sans-serif;
-        gap: 45px;
+        gap: 30px;
     }
 
     .text-open h1{
@@ -154,9 +154,9 @@ main{
     }
 
     .text-open h1{
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 800;
-    line-height: 66px;
+    line-height: 58px;
     color: #37353E;
     }
 
