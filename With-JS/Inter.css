@@ -1,0 +1,23 @@
+body {
+    /* Default (Light Mode) */
+    background-color: #fafafa;
+    color: #222;
+    transition: all 0.3s ease;
+}
+.dark-mode {
+    background-color: #222;
+    color: #fafafa;
+}
+
+#kotak-interaktif {
+    width: 300px;
+    height: 200px;
+    background-color: steelblue;
+    color: white;
+    display: flex; /* Trik agar teks bisa di tengah dengan mudah */
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    cursor: pointer; /* Mengubah kursor jadi tangan */
+    transition: all 0.3s ease;
+}

@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+}
+
+.navbar .brand{
+    margin: 0;
+}
+
+.navbar nav{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a{
+    text-decoration: none;
+    color: #37353E;
+    font-weight: 600;
+    font-family: "poppins", sans-serif;
+}
+
+.dark-mode .navbar{
+    background-color: #44444E;
+}
+
+.dark-mode nav a{
+    color: #fff;
+}
+
+#tombol-mode{
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    background: #44444E;
+    border-radius: 2px;
+    padding: 4px 6px;
+    color: #fff;
+
+}
+
+
+main{
+    margin-top: 80px;
+}
+
+#hero{
+    padding: 0px 20px 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+
+#hero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.text-open{
+    display: flex;
+    flex-direction: column;
+    font-family: "poppins", sans-serif;
+    gap: 45px;
+}
+
+.text-open h1{
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 42px;
+    color: #37353E;
+}
+
+.dark-mode .text-open h1{
+    color: #fff;
+}
+
+.text-open p{
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #37353E;
+}
+
+.dark-mode .text-open p{
+    color: #fff;
+}
+
+@media(min-width:600px){
+    .navbar{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 90px;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        gap: 35px;
+        padding: 0px 110px 80px 110px;
+    }
+
+    .text-open{
+        display: flex;
+        flex-direction: column;
+        font-family: "poppins", sans-serif;
+        gap: 45px;
+    }
+
+    .text-open h1{
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 42px;
+        color: #37353E;
+    }
+}
+
+@media(min-width:900px){
+    .navbar{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 110px;
+        height: 80px;
+        background-color: #fff;
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    #hero{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+        padding: 0px 110px 80px 110px;
+    }
+
+    .text-open h1{
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 66px;
+    color: #37353E;
+    }
+
+    .text-open p{
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    }
+}
+
+.text-open p a{
+    padding: 15px 25px;
+    background-color: #37353E;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.text-open p a:hover{
+    background-color: #fff;
+    border: 2px solid #37353E;
+    color: #37353E;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.dark-mode .text-open p a{
+    background-color: #fff;
+    color: #37353E;
+}
+
+.dark-mode .text-open p a:hover{
+    background-color: #37353E;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.features{
+    display: flex;
+    flex-direction: column;
+    font-family: poppins;
+
+    gap: 40px;
+}
+
+.features h2{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #37353E;
+}
+
+.dark-mode .features h2{
+    color: #fff;
+}
+
+.features h2 span{
+    color: #715A5A;
+}
+
+/* .fitur{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+} */
+
+.Keunggulan{
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    background-color: #ffffff;
+    border: 2px solid #37353E;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    color: #37353E;
+    font-family: poppins;
+    gap: 10px;
+}
+
+.dark-mode .Keunggulan{
+    background-color: #37353E;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.Keunggulan h3{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.Keunggulan p{
+    line-height: 26px;
+    font-size: 16px;
+}
+
+.Keunggulan:hover{
+    background-color: #37353E;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
+.dark-mode .Keunggulan:hover{
+    background-color: #fff;
+    color: #37353E;
+}
+
+.fitur {
+    display: grid;
+    grid-template-columns: 1fr; /* Hanya 1 kolom */
+    gap: 20px;
+    padding: 0 20px 70px 20px;
+}
+
+.text-open{
+    text-align: center;
+}
+
+/* Tablet Styles: Terapkan 2 kolom jika lebar layar minimal 600px */
+@media (min-width: 600px) {
+    .fitur {
+    grid-template-columns: repeat(2, 1fr); /* Ubah menjadi 2 kolom */
+    padding: 0 90px 70px 90px;
+    }
+
+    .text-open{
+        text-align: left;
+    }
+
+    .Keunggulan h3{
+    font-size: 24px;
+    font-weight: 800;
+    }
+
+    .Keunggulan p{
+        line-height: 26px;
+        font-size: 16px;
+    }
+}
+/* Desktop Styles: Terapkan 3 kolom jika lebar layar minimal 900px */
+@media (min-width: 900px) {
+    .fitur {
+        grid-template-columns: repeat(3, 1fr); /* Ubah menjadi 3 kolom */
+        padding: 0 110px 70px 110px;
+        
+    }
+    
+    .text-open{
+        text-align: left;
+    }
+    
+    .Keunggulan h3{
+        font-size: 24px;
+        font-weight: 800;
+    }
+    
+    .Keunggulan p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: #fff;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.1);
+    font-family: Poppins;
+    font-size: 14px;
+    color: #37353E;
+}
+
+.dark-mode footer{
+    background-color: #44444E;
+    color: #fff;
+}
+
+.dark-mode{
+    background-color: #37353E;
+}
