@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Righteous&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Varela+Round&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 40px 137px 120px 137px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+
+nav ul li{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: "poppins", sans-serif;
+}  
+
+.home{
+    position: relative;
+}
+
+.home::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 137px;
+}
+
+
+
+.text h1{
+    font-size: 52px;
+    font-weight: 400;
+    font-family: "Playfair Display", sans-serif;
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "poppins", sans-serif;
+    line-height: 180%;
+    /* font-style: light; */
+}
+
+.browse{
+    display: flex;
+    align-items: center;
+    margin: 14px auto 46px auto;
+    gap: 38px;
+}
+
+.browse .browse-menu{
+    padding: 14px 25px;
+    background-color: #F2F0DF;
+    border-radius: 19px;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    line-height: 158%;
+}
+
+.browse-link{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.browse-link p{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 158%;
+    text-decoration: underline;
+}
+
+.achievement{
+    display: flex;
+    align-items: flex-start;
+    gap: 53px;
+    border: 1px solid #000;
+    border-radius: 19px;
+    padding: 43px 40px;
+    max-width: 494px;
+    box-shadow: 15px 9px 30px 0 rgba(0, 0, 0, 0.25);
+    margin-bottom: 178px;
+}
+
+.achievement h2{
+    font-family: "poppins", sans-serif;
+    font-weight: 275;
+    font-size: 33px;
+    line-height: 1;
+}
+
+.achievement p{
+    font-family: "poppins", sans-serif;
+    font-weight: 300px;
+    font-size: 14px;
+    line-height: 158%;
+}
+
+.achievement p span{
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 158%;
+}
+
+.picture{
+    display: flex;
+    align-items: flex-start;
+    gap: 29px;
+}
+
+.pict-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.pict-1{
+    height: 531px;
+    width: 254px;
+    border-radius: 19px;
+    object-fit: cover;
+}
+
+.picture-right{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.pict-2{
+    width: 254px;
+    height: 251px;
+    border-radius: 19px;
+    object-fit: cover;
+}
+
+.pict-3{
+    width: 254px;
+    height: 251px;
+    border-radius: 19px;
+    object-fit: cover;
+    
+}
+
+.pict-info{
+    position: absolute;
+    left: 11px;
+    bottom: 15px;
+    right: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 23px 0 17px;
+    background-color: #fff;
+    /* width: 232px; */
+    height: 65px;
+    border-radius: 10px;
+    
+}
+
+
+.pict-info h4{
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "poppins", sans-serif;
+    line-height: 158%;
+}
+
+.pict-info p{
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "poppins", sans-serif;
+    line-height: 158%;
+}
+
+.pict-info span{
+    
+    font-size: 17px;
+    font-weight: 400px;
+    font-family: "poppins", sans-serif;
+}

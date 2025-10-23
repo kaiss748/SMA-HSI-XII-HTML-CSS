@@ -130,11 +130,7 @@ padding: 40px;
     padding: 20px;
 } */
 
-.card-uni:hover{
-    background-color: darkslategray;
-    color: #ffffff;
-    transform: translateY(-7px);
-}
+
 
 #judul-uni{
     font-family: poppins;
@@ -165,6 +161,12 @@ padding: 40px;
     font-family: poppins;
     gap: 10px;
 }
+.card-uni:hover{
+    background-color: darkslategray;
+    color: #ffffff;
+    transform: translateY(-7px);
+}
+
 /* Mobile-First: Defaultnya adalah 1 kolom */
     .project-gallery {
     display: grid;

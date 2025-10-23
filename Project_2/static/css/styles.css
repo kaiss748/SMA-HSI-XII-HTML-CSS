@@ -95,6 +95,8 @@ button{
 button:hover{
     color: #44444E;
     background-color: #ddd;
+    transform: translateY(-7px);
+    box-shadow: 0 4px 4px rgba(0,0,0,0.5);
     
 }
 
