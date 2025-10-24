@@ -141,16 +141,28 @@ main{
     gap: 29px;
 }
 
-.pict-box{
+.pict-box-1, .pict-box-2, .pict-box-3{
     position: relative;
     overflow: hidden;
 }
 
-.pict-1{
+.pict-box-1{
     height: 531px;
     width: 254px;
     border-radius: 19px;
+    /* object-fit: cover; */
+}
+
+.pict-1{
+    height: 100%;
+    width: 100%;
+    border-radius: 19px;
     object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.pict-1:hover{
+    transform: scale(1.2);
 }
 
 .picture-right{
@@ -159,19 +171,50 @@ main{
     gap: 29px;
 }
 
-.pict-2{
+.pict-box-2{
     width: 254px;
     height: 251px;
     border-radius: 19px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
-.pict-3{
+.pict-2{
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
+    object-fit: cover;
+    transition: transform 1s ease;
+}
+
+.pict-2:hover{
+    transform: scale(1.2);
+}
+
+.pict-box-3{
     width: 254px;
     height: 251px;
     border-radius: 19px;
+}
+
+.pict-box-3 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 19px;
     object-fit: cover;
-    
+    transition: opacity 1s ease;
+}
+
+.pict-3-hover{
+    opacity: 0;
+}
+
+.pict-box-3:hover .pict-3-hover{
+    opacity: 1;
+}
+
+.pict-box-3:hover .pict-3{
+    opacity: 0;
 }
 
 .pict-info{
