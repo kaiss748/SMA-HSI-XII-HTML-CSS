@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/siuuu.css') }}">
+</head>
+<body>
+    <h2>Hubungi Saya</h2>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" name="nama" />
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" />
+        </div>
+        <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" name="pesan" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn">Kirim Pesan</button>
+        <p id="form-status"></p>
+        <!-- Untuk menampilkan pesan status -->
+    </form>
+    <script>
+        const contactForm = document.querySelector("#contact-form");
+        const statusMessage = document.querySelector("#form-status");
+        
+        contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Selalu hentikan submit dulu
+
+            // Ambil nilai dari input
+            const nama = document.querySelector("#nama").value.trim();
+            const email = document.querySelector("#email").value.trim();
+            const pesan = document.querySelector("#pesan").value.trim();
+
+            // Validasi: cek apakah ada field yang kosong
+            if (nama === "" || email === "" || pesan === "") {
+            statusMessage.textContent = "Error: Semua field wajib diisi!";
+            statusMessage.style.color = "red";
+            } else {
+            statusMessage.textContent = "Sukses! Pesan Anda akan segera diproses.";
+            statusMessage.style.color = "green";
+            // Di sini kita bisa menambahkan kode untuk mengirim form,
+            // atau membersihkan input setelah berhasil.
+            // contactForm.reset(); // Untuk mengosongkan form
+            }
+        });
+    </script>
+</body>
+</html>
