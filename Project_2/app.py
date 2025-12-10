@@ -9,15 +9,14 @@ app.secret_key = 'ini-rahasia-banget-loh'
 @app.route('/guestbook', methods=['GET', 'POST'])
 def bukutamu():
     if request.method == 'POST':
-        nama = request.form['nama_post']
-        pesan = request.form['pesan_post']
+        nama = request.form.get('nama_post')
+        pesan = request.form.get('pesan_post')
         komen = {'nama': nama, 'pesan': pesan}
         semua_pesan.append(komen)
 
-        flash('Pesan Anda telah berhasil dikirim!', 'success') # 'success' adalah kategori (opsional)
+        flash('Pesan Anda telah berhasil dikirim!', 'success')
 
         return redirect(url_for('bukutamu'))
-        # return render_template('GuestBook.html', komen=komen, nama=nama, pesan=pesan, semua_pesan=semua_pesan)
     else:
         return render_template('GuestBook.html', semua_pesan=semua_pesan)
     

@@ -68,7 +68,6 @@ main{
     font-weight: 300;
     font-family: "poppins", sans-serif;
     line-height: 180%;
-    /* font-style: light; */
 }
 
 .browse{
@@ -150,7 +149,6 @@ main{
     height: 531px;
     width: 254px;
     border-radius: 19px;
-    /* object-fit: cover; */
 }
 
 .pict-1{
@@ -175,7 +173,6 @@ main{
     width: 254px;
     height: 251px;
     border-radius: 19px;
-    /* object-fit: cover; */
 }
 
 .pict-2{
@@ -227,7 +224,6 @@ main{
     justify-content: space-between;
     padding: 0 23px 0 17px;
     background-color: #fff;
-    /* width: 232px; */
     height: 65px;
     border-radius: 10px;
     

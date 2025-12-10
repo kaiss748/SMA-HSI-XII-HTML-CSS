@@ -218,12 +218,6 @@ main{
     color: #715A5A;
 }
 
-/* .fitur{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-} */
-
 .Keunggulan{
     display: flex;
     flex-direction: column;
@@ -268,7 +262,7 @@ main{
 
 .fitur {
     display: grid;
-    grid-template-columns: 1fr; /* Hanya 1 kolom */
+    grid-template-columns: 1fr; 
     gap: 20px;
     padding: 0 20px 70px 20px;
 }
@@ -277,10 +271,10 @@ main{
     text-align: center;
 }
 
-/* Tablet Styles: Terapkan 2 kolom jika lebar layar minimal 600px */
+
 @media (min-width: 600px) {
     .fitur {
-    grid-template-columns: repeat(2, 1fr); /* Ubah menjadi 2 kolom */
+    grid-template-columns: repeat(2, 1fr); 
     padding: 0 90px 70px 90px;
     }
 
@@ -298,10 +292,10 @@ main{
         font-size: 16px;
     }
 }
-/* Desktop Styles: Terapkan 3 kolom jika lebar layar minimal 900px */
+
 @media (min-width: 900px) {
     .fitur {
-        grid-template-columns: repeat(3, 1fr); /* Ubah menjadi 3 kolom */
+        grid-template-columns: repeat(3, 1fr); 
         padding: 0 110px 70px 110px;
         
     }

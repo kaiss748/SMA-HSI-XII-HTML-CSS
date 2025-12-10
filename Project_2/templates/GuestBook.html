@@ -17,9 +17,9 @@
         <div class="alert alert-{{ category }}">{{ message }}</div>
         {% endfor %} {% endif %} {% endwith %}
         <form action="" method="POST" id="bukutamu">
-            <input type="text" id="nama-user" placeholder="Your Name" name="nama_post" required>
+            <input type="text" id="nama-user" placeholder="Your Name" name="nama_post">
             <br /><br />
-            <textarea name="pesan_post" id="pesan-user" required placeholder="Messages"></textarea>
+            <textarea name="pesan_post" id="pesan-user" placeholder="Messages"></textarea>
             <br /><br />
             <button type="submit">Submit</button>
             <p id="form-status"></p>
@@ -43,13 +43,12 @@
         const statusMessage = document.querySelector("#form-status");
 
         contactForm.addEventListener("submit", function (e) {
-            e.preventDefault(); // Selalu hentikan submit dulu
+            e.preventDefault(); 
 
-            // Ambil nilai dari input
+
             const nama = document.querySelector("#nama-user").value.trim();
             const pesan = document.querySelector("#pesan-user").value.trim();
 
-            // Validasi: cek apakah ada field yang kosong
             if (nama === "" || pesan === "") {
             statusMessage.textContent = "Error: Semua field wajib diisi!";
             statusMessage.style.color = "red";
@@ -57,9 +56,6 @@
             statusMessage.textContent = "Sukses! Pesan Anda akan segera diproses.";
             statusMessage.style.color = "green";
             contactForm.submit();
-            // Di sini kita bisa menambahkan kode untuk mengirim form,
-            // atau membersihkan input setelah berhasil.
-            // contactForm.reset(); // Untuk mengosongkan form
             }
         });
         
